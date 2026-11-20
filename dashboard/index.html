@@ -3,12 +3,32 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Token Radar: pre-token protocols ranked by implied value</title>
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<meta name="description" content="A token-launch radar: every pre-token protocol in the snapshot, ranked by an implied value derived from TVL, relative growth, patience and category, with a farm plan for each.">
 <link rel="stylesheet" href="app.css">
 </head>
 <body>
 <a class="skip" href="#board">Skip to the board</a>
-<main id="board" tabindex="-1" aria-busy="true"></main>
+<div class="shell">
+
+  <header class="masthead">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="brand-name">TOKEN&nbsp;RADAR</span>
+      <span class="brand-rule" aria-hidden="true"></span>
+      <span class="brand-sub">pre-token launch intelligence</span>
+    </div>
+    <div class="stamp" id="stamp" aria-live="polite">loading…</div>
+  </header>
+
+  <main id="board" tabindex="-1" aria-busy="true">
+    <noscript><p class="notice">This dashboard renders its board from <code>data.js</code>; it needs JavaScript on, and no network at all.</p></noscript>
+  </main>
+
+  <footer class="foot">
+    <p id="foot-note">Built from the sealed snapshot; no network, no framework, no fetched data.</p>
+  </footer>
+</div>
 <script src="../data.js"></script>
 <script src="app.js"></script>
 </body>
